@@ -1,0 +1,52 @@
+---
+title: "Advanced Tips"
+subtitle: "Data4All"
+author: "Ted Laderas, PhD"
+format: 
+  live-html:
+    scrollable: true
+    toc-location: left
+engine: knitr
+webr:
+  render-df: paged-table
+  packages:
+    - ggplot2
+    - dplyr
+    - DT
+  resources:
+    - data
+pyodide:
+  render-df: paged-table
+  resources:
+    - data
+  packages:
+    - openpyxl
+    - pandas
+---
+
+## No Calculations in the Raw Data files
+
+- Keep the Raw Data Raw and read-only when possible
+- Make backups (see below)
+
+## Make Backups
+
+- Avoid modifying raw data in place
+  - Version the file when you add more data
+  - Write protect the files
+- Make copies for analysis and yourself
+
+## Use Data Validation to Avoid Errors
+
+- Select column, then **Data >> Validation**
+- Think about what data types a column should be
+  - A whole number in some range
+  - A decimal number in some range
+  - A list of possible values
+  - Text, but with a limit on length
+- Specify when values are missing consistently
+
+## Save the Data in Plain Text Files
+
+- Excel: **File >> Save As >> CSV UTF-8**
+- Google Sheets: **File >> Download >> CSV**

@@ -1,0 +1,129 @@
+---
+title: "Better ~~Excel~~ Spreadsheets"
+resources: data
+subtitle: "Data4All"
+author: "Ted Laderas, PhD"
+format: 
+  live-html:
+    scrollable: true
+    toc-location: left
+engine: knitr
+webr:
+  render-df: paged-table
+  packages:
+    - readxl
+    - dplyr
+    - tidyr
+  resources:
+    - data
+pyodide:
+  render-df: paged-table
+  resources:
+    - data
+  packages:
+    - pandas
+    - openpyxl
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Reminder
+
+This workshop adheres to the DaSL Learning Community Participation Guidelines:
+
+[Participation Guidelines](https://hutchdatascience.org/communitystudios/guidelines/)
+
+Please be respectful of your fellow learners and help each other learn.
+
+Remember, it's dangerous to learn alone! So partner up with someone, it's fun to learn together.
+
+## Introduction
+
+> Spreadsheets, for all of their mundane rectangularness, have been the subject of angst and controversy for decades. - Kara Woo and Karl Broman
+
+There are better ways of formatting spreadsheets that we can learn to make our spreadsheets more useful to others. We can do this in ways that still make spreadsheets useful to us. 
+
+## A Note About Excel and Spreadsheets
+
+Excel is super useful and super flexible. As a Data Scientist, I will never look down on Excel users.
+
+These tips will make collaborating with data scientists easier, but the goal is to understand how your data gets transformed and loaded with various tools. 
+
+If you only implement some of these tips, that's great. Do what's easiest for you.
+
+Our goal is reproducible research - and you can do your part.
+
+## This is Workshop is Not About Excel Tips
+
+This workshop is about **formatting**, not necessarily tips and tricks for Excel. 
+
+## Learning Objectives
+
+![R/Excel Disco by Allison Horst](images/horst-r-excel-disco.png)
+
+- **Explain** and **utilize** tidy principles to effectively organize your data
+- **Format** your data to effecitvely utilize it in analyses
+- **Collaborate** with data scientists more effectively with formatting tips
+- **Explain** data cleaning tools in R that can help
+
+## Motivation
+
+[Spreadsheet Horror Stories](https://eusprig.org/research-info/horror-stories/)
+
+- [Retraction Watch: Genomics has a Spreadsheet Problem](https://retractionwatch.com/2023/09/20/guest-post-genomics-has-a-spreadsheet-problem/) - Thankfully, this has been fixed in recent versions of Excel
+- [Formula error inflated myocarditis statistics](https://www.aap.com.au/factcheck/faulty-data-at-the-heart-of-myocarditis-claim/)
+- [Officials Say They've Fixed a 'Sorting' Breakdown in Virginia Booze Raffle](https://www.route-fifty.com/digital-government/2023/05/virginia-abc-officials-say-theyve-automated-liquor-lotteries-prevent-future-errors/386926/)
+
+> Murrell (2013) contrasted data that are formatted for humans to view by eye with data that are formatted for a computer. He provided an extended example of computer code to extract data from a set of files with complex arrangements. It is important that data analysts be able to work with such complex data files. **But if the initial arrangement of the data files is planned with the computer in mind, the later analysis process is simplified.**
+
+## Data Integrity
+
+- [What We Know About Spreadsheet Errors](http://panko.shidler.hawaii.edu/SSR/Mypapers/whatknow.htm)
+- Don't go back and try to retrospectively implement these tips. Try and adopt a few of them starting now.
+- Don't be embarrassed or ashamed - just resolve to do better
+
+## Overview of Today
+
+We'll be looking at the tips from [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989#abstract). 
+
+I think if you work with spreadsheets in any way, you should take a look at it.
+
+::::{.columns}
+:::{.column width="35%"}
+### [Starting Out Tips](starting.html)
+
+- **No empty cells**
+- **Choose Good Names for Things**
+- Write Dates as YYYY-MM-DD
+- Be Consistent
+- Put just one thing in a cell
+:::
+
+:::{.column width="35%"}
+### [Intermediate Tips](intermediate.html)
+
+- **Make it a Rectangle**
+- **Create a Data Dictionary**
+- Do not use font color or highlighting as data
+:::
+
+:::{.column width="30%"}
+### [Advanced Tips](advanced.html)
+- **Make Backups**
+- No Calculations in the Raw Data files
+- Use Data Validation to Avoid Errors
+- Save the Data in Plain Text Files
+:::
+::::
+
+### Cleaning Data in Excel
+
+- [Top Tips for Cleaning Your Data in Excel](https://support.microsoft.com/en-us/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19)
+
+### Spreadsheet Examples
+
+All of these examples are from the reading, with the exception of the fertility data.
+
+
+
+<iframe width="650" height="400" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7q0kwXBXTxgpoLZsPjWtJiL_P9khADMpfpNdaNfChn0wMALfjEAjQ35prUoeaSGxQa3e0iWKpESul/pubhtml?widget=true&amp;headers=false"></iframe>

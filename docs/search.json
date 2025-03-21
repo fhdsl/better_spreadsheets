@@ -1,0 +1,242 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Better Spreadsheets",
+    "section": "",
+    "text": "0.1 Reminder\nThis workshop adheres to the DaSL Learning Community Participation Guidelines:\nParticipation Guidelines\nPlease be respectful of your fellow learners and help each other learn.\nRemember, it’s dangerous to learn alone! So partner up with someone, it’s fun to learn together.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Better Spreadsheets",
+    "section": "0.2 Introduction",
+    "text": "0.2 Introduction\n\nSpreadsheets, for all of their mundane rectangularness, have been the subject of angst and controversy for decades. - Kara Woo and Karl Broman\n\nThere are better ways of formatting spreadsheets that we can learn to make our spreadsheets more useful to others. We can do this in ways that still make spreadsheets useful to us.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#a-note-about-excel-and-spreadsheets",
+    "href": "index.html#a-note-about-excel-and-spreadsheets",
+    "title": "Better Spreadsheets",
+    "section": "0.3 A Note About Excel and Spreadsheets",
+    "text": "0.3 A Note About Excel and Spreadsheets\nExcel is super useful and super flexible. As a Data Scientist, I will never look down on Excel users.\nThese tips will make collaborating with data scientists easier, but the goal is to understand how your data gets transformed and loaded with various tools.\nIf you only implement some of these tips, that’s great. Do what’s easiest for you.\nOur goal is reproducible research - and you can do your part.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#this-is-workshop-is-not-about-excel-tips",
+    "href": "index.html#this-is-workshop-is-not-about-excel-tips",
+    "title": "Better Spreadsheets",
+    "section": "0.4 This is Workshop is Not About Excel Tips",
+    "text": "0.4 This is Workshop is Not About Excel Tips\nThis workshop is about formatting, not necessarily tips and tricks for Excel.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Better Spreadsheets",
+    "section": "0.5 Learning Objectives",
+    "text": "0.5 Learning Objectives\n\n\n\nR/Excel Disco by Allison Horst\n\n\n\nExplain and utilize tidy principles to effectively organize your data\nFormat your data to effecitvely utilize it in analyses\nCollaborate with data scientists more effectively with formatting tips\nExplain data cleaning tools in R that can help",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#motivation",
+    "href": "index.html#motivation",
+    "title": "Better Spreadsheets",
+    "section": "0.6 Motivation",
+    "text": "0.6 Motivation\nSpreadsheet Horror Stories\n\nRetraction Watch: Genomics has a Spreadsheet Problem - Thankfully, this has been fixed in recent versions of Excel\nFormula error inflated myocarditis statistics\nOfficials Say They’ve Fixed a ‘Sorting’ Breakdown in Virginia Booze Raffle\n\n\nMurrell (2013) contrasted data that are formatted for humans to view by eye with data that are formatted for a computer. He provided an extended example of computer code to extract data from a set of files with complex arrangements. It is important that data analysts be able to work with such complex data files. But if the initial arrangement of the data files is planned with the computer in mind, the later analysis process is simplified.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#data-integrity",
+    "href": "index.html#data-integrity",
+    "title": "Better Spreadsheets",
+    "section": "0.7 Data Integrity",
+    "text": "0.7 Data Integrity\n\nWhat We Know About Spreadsheet Errors\nDon’t go back and try to retrospectively implement these tips. Try and adopt a few of them starting now.\nDon’t be embarrassed or ashamed - just resolve to do better",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#overview-of-today",
+    "href": "index.html#overview-of-today",
+    "title": "Better Spreadsheets",
+    "section": "0.8 Overview of Today",
+    "text": "0.8 Overview of Today\nWe’ll be looking at the tips from Data Organization in Spreadsheets.\nI think if you work with spreadsheets in any way, you should take a look at it.\n\n\n\n0.8.1 Starting Out Tips\n\nNo empty cells\nChoose Good Names for Things\nWrite Dates as YYYY-MM-DD\nBe Consistent\nPut just one thing in a cell\n\n\n\n\n0.8.2 Intermediate Tips\n\nMake it a Rectangle\nCreate a Data Dictionary\nDo not use font color or highlighting as data\n\n\n\n\n0.8.3 Advanced Tips\n\nMake Backups\nNo Calculations in the Raw Data files\nUse Data Validation to Avoid Errors\nSave the Data in Plain Text Files\n\n\n\n\n\n0.8.4 Cleaning Data in Excel\n\nTop Tips for Cleaning Your Data in Excel\n\n\n\n0.8.5 Spreadsheet Examples\nAll of these examples are from the reading, with the exception of the fertility data.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "starting.html",
+    "href": "starting.html",
+    "title": "2  Starting Out Tips",
+    "section": "",
+    "text": "2.1 Rows and columns",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Starting Out Tips</span>"
+    ]
+  },
+  {
+    "objectID": "starting.html#rows-and-columns",
+    "href": "starting.html#rows-and-columns",
+    "title": "2  Starting Out Tips",
+    "section": "",
+    "text": "Rows are for observations\nColumns are for variables\nKeep the data type the same in a column\n\nNumbers (Integer vs Decimal)\nText\n\nAvoid more than one table per spreadsheet",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Starting Out Tips</span>"
+    ]
+  },
+  {
+    "objectID": "starting.html#be-consistent",
+    "href": "starting.html#be-consistent",
+    "title": "2  Starting Out Tips",
+    "section": "2.2 Be Consistent",
+    "text": "2.2 Be Consistent\n\nUse consistent codes for categorical variables\nUse a consistent fixed code for any missing values\nUse consistent subject identifiers\nUse consistent date formatting",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Starting Out Tips</span>"
+    ]
+  },
+  {
+    "objectID": "starting.html#no-empty-cells",
+    "href": "starting.html#no-empty-cells",
+    "title": "2  Starting Out Tips",
+    "section": "2.3 No empty cells",
+    "text": "2.3 No empty cells\n\nIf the data is missing, explicitly encode it as missing\nAvoid headers with more than one row\n\n\n2.3.1 Original\n\n\n\n\n2.3.2 Better Version\n\n\n\n\n2.3.3 Can we load the original?\nWhat does it look like when we try to load?\n\nRPython\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2.3.4 Loading the Better Version\nWith the better version of the dataset, we can load it and group by variables.\nTry changing the grouping variable from genotype to strain.\n\nRPython",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Starting Out Tips</span>"
+    ]
+  },
+  {
+    "objectID": "starting.html#choose-good-names-for-things",
+    "href": "starting.html#choose-good-names-for-things",
+    "title": "2  Starting Out Tips",
+    "section": "2.4 Choose Good Names for Things",
+    "text": "2.4 Choose Good Names for Things\n\nVariable names: avoid spaces, avoid starting with numbers.\nDo: Use numbers and letters, avoid special characters & symbols\nDo: use _ instead of spaces\nHave an internal column name (max_temp) and a displayed name (Maximum Temp (°C))\n\n\n\nWhy is this necessary?\n\nSpaces can be hard to deal with in variable names\nSpecial characters may not be accepted in R/Python\n\nmy_data |&gt;\n   filter(`Maximum Temp (°C)` &gt; 10)\n\nR doesn’t like column names to begin with numbers (it changes 1st_place to X1st_place)\n\n\n\n\n\n\n\nFor Data Scientists: janitor::clean_names()\n\n\n\n\nclean_names() will remove spaces and special characters, and use camel case\nInstead of Maximum Temp (°C) - will transform to maximum_temp_c\nRemoves capitalization\nRemoves accents and diacriticals",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Starting Out Tips</span>"
+    ]
+  },
+  {
+    "objectID": "starting.html#put-just-one-thing-in-a-cell",
+    "href": "starting.html#put-just-one-thing-in-a-cell",
+    "title": "2  Starting Out Tips",
+    "section": "2.5 Put just one thing in a cell",
+    "text": "2.5 Put just one thing in a cell\n\nAvoid combining columns into a single column\nAvoid putting multiple bits of information in a cell\n\n\n\nExample:\n\n\n\nBetter\n\n\n\n\n\n\n\n\n\n\nData Science Tools: tidy::separate()",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Starting Out Tips</span>"
+    ]
+  },
+  {
+    "objectID": "starting.html#write-dates-as-yyyy-mm-dd",
+    "href": "starting.html#write-dates-as-yyyy-mm-dd",
+    "title": "2  Starting Out Tips",
+    "section": "2.6 Write Dates as YYYY-MM-DD",
+    "text": "2.6 Write Dates as YYYY-MM-DD\n\nDD-MM-YYYY has a lot of issues\nConvert YYYY-MM-DD to text when you load\nOr use as YYYYMMDD as integer",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Starting Out Tips</span>"
+    ]
+  },
+  {
+    "objectID": "intermediate.html",
+    "href": "intermediate.html",
+    "title": "3  Intermediate Tips",
+    "section": "",
+    "text": "3.1 Make it a Rectangle\nThis is the data format that is the most flexible and lets you do the most with the data. Why?\nBecause we can work with variables as columns, and filter, and transform them easily.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Tips</span>"
+    ]
+  },
+  {
+    "objectID": "intermediate.html#make-it-a-rectangle",
+    "href": "intermediate.html#make-it-a-rectangle",
+    "title": "3  Intermediate Tips",
+    "section": "",
+    "text": "Some datasets will not fit nicely into a single rectangle, but they will usually fit into a set of rectangles, in which case you can make a set of Excel files, each with a rectangle of data. It is best to keep each rectangle in its own file; tables scattered around a worksheet are difficult to work with, and they make it hard to export the data to CSV files.\n\n\n\nEach variable forms a column\nEach observation forms a row\nEach cell is a single measurement\n\n\n\n\n\n\n3.1.1 Tidy can be in the eye of the beholder\n\n\n\n\n\n\n\n\nCompare to the tidy format:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Science Tools: tidyr::pivot_longer() and tidyr::pivot_wider()\n\n\n\n\nIn the tidyr package, pivot_wider() and pivot_longer() are extremely useful ways to make a set of columns into a single column and vice versa. See the code above.\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Tidy Explain\n\n\n\n\n\n\n3.1.2 Tidy Data Examples\nFor example:\n\nRPython\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSometimes you should try and separate tables, if you are repeating a lot of information.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Tips</span>"
+    ]
+  },
+  {
+    "objectID": "intermediate.html#create-a-data-dictionary",
+    "href": "intermediate.html#create-a-data-dictionary",
+    "title": "3  Intermediate Tips",
+    "section": "3.2 Create a Data Dictionary",
+    "text": "3.2 Create a Data Dictionary\n\nDefine your variables\nDescribe the contents and formatting\nDefine missing values\nSave as a separate text file\n\n\n\nMetadata (data or information about the dataset) is extremely useful and is better saved in another file.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Tips</span>"
+    ]
+  },
+  {
+    "objectID": "intermediate.html#do-not-use-font-color-or-highlighting-as-data",
+    "href": "intermediate.html#do-not-use-font-color-or-highlighting-as-data",
+    "title": "3  Intermediate Tips",
+    "section": "3.3 Do not use font color or highlighting as data",
+    "text": "3.3 Do not use font color or highlighting as data\n\nColor is great, but if it conveys information you want a data scientist to utilize, put that information as a separate indicator column:\n\n\n\n\n\n\nGetting color data out of spreadsheets is extremely difficult (Visual Basic Macros)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Tips</span>"
+    ]
+  },
+  {
+    "objectID": "advanced.html",
+    "href": "advanced.html",
+    "title": "4  Advanced Tips",
+    "section": "",
+    "text": "4.1 No Calculations in the Raw Data files",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Advanced Tips</span>"
+    ]
+  },
+  {
+    "objectID": "advanced.html#no-calculations-in-the-raw-data-files",
+    "href": "advanced.html#no-calculations-in-the-raw-data-files",
+    "title": "4  Advanced Tips",
+    "section": "",
+    "text": "Keep the Raw Data Raw and read-only when possible\nMake backups (see below)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Advanced Tips</span>"
+    ]
+  },
+  {
+    "objectID": "advanced.html#make-backups",
+    "href": "advanced.html#make-backups",
+    "title": "4  Advanced Tips",
+    "section": "4.2 Make Backups",
+    "text": "4.2 Make Backups\n\nAvoid modifying raw data in place\n\nVersion the file when you add more data\nWrite protect the files\n\nMake copies for analysis and yourself",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Advanced Tips</span>"
+    ]
+  },
+  {
+    "objectID": "advanced.html#use-data-validation-to-avoid-errors",
+    "href": "advanced.html#use-data-validation-to-avoid-errors",
+    "title": "4  Advanced Tips",
+    "section": "4.3 Use Data Validation to Avoid Errors",
+    "text": "4.3 Use Data Validation to Avoid Errors\n\nSelect column, then Data &gt;&gt; Validation\nThink about what data types a column should be\n\nA whole number in some range\nA decimal number in some range\nA list of possible values\nText, but with a limit on length\n\nSpecify when values are missing consistently",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Advanced Tips</span>"
+    ]
+  },
+  {
+    "objectID": "advanced.html#save-the-data-in-plain-text-files",
+    "href": "advanced.html#save-the-data-in-plain-text-files",
+    "title": "4  Advanced Tips",
+    "section": "4.4 Save the Data in Plain Text Files",
+    "text": "4.4 Save the Data in Plain Text Files\n\nExcel: File &gt;&gt; Save As &gt;&gt; CSV UTF-8\nGoogle Sheets: File &gt;&gt; Download &gt;&gt; CSV",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Advanced Tips</span>"
+    ]
+  }
+]

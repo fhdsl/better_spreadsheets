@@ -1,0 +1,179 @@
+---
+title: "Starting Out Tips"
+resources: data
+subtitle: "Data4All"
+author: "Ted Laderas, PhD"
+format: 
+  live-html:
+    scrollable: true
+    toc-location: left
+engine: knitr
+webr:
+  render-df: paged-table
+  packages:
+    - readxl
+    - dplyr
+    - tidyr
+  resources:
+    - data
+pyodide:
+  render-df: paged-table
+  resources:
+    - data
+  packages:
+    - pandas
+    - openpyxl
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Rows and columns
+
+- Rows are for observations
+- Columns are for variables
+- Keep the data type the same in a column
+  - Numbers (Integer vs Decimal)
+  - Text
+- Avoid more than one table per spreadsheet
+
+## Be Consistent
+
+- Use consistent codes for categorical variables
+- Use a consistent fixed code for any missing values
+- Use consistent subject identifiers
+- Use consistent date formatting
+
+## No empty cells
+
+- If the data is missing, explicitly encode it as missing
+- Avoid headers with more than one row
+
+### Original
+
+<iframe width="600" height= "150" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7q0kwXBXTxgpoLZsPjWtJiL_P9khADMpfpNdaNfChn0wMALfjEAjQ35prUoeaSGxQa3e0iWKpESul/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;range=A1:I14&amp;headers=false"></iframe>
+
+### Better Version
+<iframe width="600" height = "250" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7q0kwXBXTxgpoLZsPjWtJiL_P9khADMpfpNdaNfChn0wMALfjEAjQ35prUoeaSGxQa3e0iWKpESul/pubhtml?gid=1953255846&amp;single=true&amp;widget=true&amp;range=A1:E17&amp;headers=false"></iframe>
+
+### Can we load the original?
+
+What does it look like when we try to load?
+
+::::{.panel-tabset group="language"}
+## R
+
+```{webr}
+library(readxl)
+library(dplyr)
+fig2 <- read_excel("data/better_excel_examples.xlsx", sheet="fig2")
+fig2
+```
+
+## Python
+
+```{pyodide}
+import pandas as pd
+fig2 = pd.read_excel("data/better_excel_examples.xlsx", sheet_name="fig2")
+fig2
+```
+
+::::
+
+### Loading the Better Version
+
+With the better version of the dataset, we can load it and group by variables.
+
+Try changing the grouping variable from `genotype` to `strain`.
+
+::::{.panel-tabset group="language"}
+## R
+
+```{webr}
+library(readxl)
+library(dplyr)
+fig2better <- read_excel("data/better_excel_examples.xlsx", sheet="fig2better")
+fig2better |>
+  group_by(genotype) |>
+  summarize(mean_response = mean(response),
+            sd_response = sd(response))
+```
+
+## Python
+
+```{pyodide}
+import pandas as pd
+fig2better = pd.read_excel("data/better_excel_examples.xlsx", sheet_name="fig2better")
+
+fig2better.groupby("genotype").response.agg(["mean", "std"])
+```
+::::
+
+
+## Choose Good Names for Things
+
+- Variable names: avoid spaces, avoid starting with numbers.
+- Do: Use numbers and letters, avoid special characters & symbols
+- Do: use `_` instead of spaces
+- Have an internal column name (`max_temp`) and a displayed name (`Maximum Temp (°C)`)
+
+<iframe width="600" height = "250" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7q0kwXBXTxgpoLZsPjWtJiL_P9khADMpfpNdaNfChn0wMALfjEAjQ35prUoeaSGxQa3e0iWKpESul/pubhtml?gid=1983153915&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:C8"></iframe>
+
+Why is this necessary?
+
+- Spaces can be hard to deal with in variable names
+- Special characters may not be accepted in R/Python
+
+```r
+my_data |>
+   filter(`Maximum Temp (°C)` > 10)
+```
+
+- R doesn't like column names to begin with numbers (it changes `1st_place` to `X1st_place`)
+
+:::{.callout-note}
+### For Data Scientists: `janitor::clean_names()`
+
+- `clean_names()` will remove spaces and special characters, and use camel case
+- Instead of `Maximum Temp (°C)` - will transform to `maximum_temp_c`
+- Removes capitalization
+- Removes accents and diacriticals
+:::
+
+
+## Put just one thing in a cell
+
+- Avoid combining columns into a single column
+- Avoid putting multiple bits of information in a cell
+
+::::{.columns}
+:::{.column width="50%"}
+Example: 
+
+<iframe height = 200 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7q0kwXBXTxgpoLZsPjWtJiL_P9khADMpfpNdaNfChn0wMALfjEAjQ35prUoeaSGxQa3e0iWKpESul/pubhtml?gid=292780420&amp;single=true&amp;widget=true&amp;range=A1:A5&amp;headers=false"></iframe>
+:::
+:::{.column width="50%"}
+Better
+
+<iframe height = 200 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7q0kwXBXTxgpoLZsPjWtJiL_P9khADMpfpNdaNfChn0wMALfjEAjQ35prUoeaSGxQa3e0iWKpESul/pubhtml?gid=1002305030&amp;single=true&amp;widget=true&amp;range=A1:C5&amp;headers=false"></iframe>
+:::
+::::
+
+:::{.callout-note}
+## Data Science Tools: `tidy::separate()`
+
+```{webr}
+library(readxl)
+library(dplyr)
+combined <- read_excel("data/better_excel_examples.xlsx", sheet="combined")
+combined |>
+  tidyr::separate(sample_well_replicate, 
+                  into=c("Sample", "Well", "Replicate"), 
+                  sep="_")
+```
+:::
+
+## Write Dates as YYYY-MM-DD
+
+- DD-MM-YYYY has a lot of issues
+- Convert YYYY-MM-DD to text when you load
+- Or use as YYYYMMDD as integer

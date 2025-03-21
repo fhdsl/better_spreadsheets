@@ -1,0 +1,21 @@
+project:
+  type: book
+#  output-dir: docs
+
+book:
+  title: "Better Spreadsheets"
+  chapters:
+      - index.qmd
+      - starting.qmd
+      - intermediate.qmd
+      - advanced.qmd
+      - resources.qmd
+
+format:
+  live-html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

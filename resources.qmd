@@ -1,0 +1,26 @@
+---
+title: "Resources"
+---
+
+## Data Organization in Spreadsheets
+
+- [This is the paper we discussed](https://doi.org/10.1080/00031305.2017.1375989) - it is free to read and I think it's a must read if you do any work with spreadsheets.
+
+## Tidy Data
+
+Some say that tidy data is a bit of a cult. But I think the principles are sound and helpful ways to think about organizing data.
+
+- [Tidy Data (from the tidyr package)](https://tidyr.tidyverse.org/articles/tidy-data.html) - this is a vignette from the `{tidyr}` package explaining the virtues of tidy data.
+- [Tidy data for efficiency, reproducibility and collaboration](https://openscapes.org/blog/2020-10-12-tidy-data/) - this blog from Openscapes is a nice, gentle introduction to tidy data.
+- [How to Share Data for Collaboration](https://doi.org/10.1080/00031305.2017.1375987) - more guidelines on how to share data with statisticians from Jeff Leek (DaSL overlord) and Shannon Ellis.
+
+## R Packages
+
+- [`{janitor}`](https://sfirke.github.io/janitor/index.html) - this will always have a place in my heart because of `janitor::clean_names()`.
+- [`{tidyr}`](https://tidyr.tidyverse.org/) - this `tidyverse` package anticpiates and provides solutions for many spreadsheet issues.
+
+## Python Resources
+
+- [Python for Data Science: Tidy Data](https://aeturrell.github.io/python4DS/data-tidy.html) - this chapter outlines some of the Python tools for cleaning data: `.melt()`, `.wide_to_long()`, `.stack()/unstack()`, `.pivot()` and others.
+- [Tidy Data with Pandas](https://librarycarpentry.org/lc-python-intro/tidy.html) - lesson from Library Carpentry which also discusses Python methods for tidying data.
+
