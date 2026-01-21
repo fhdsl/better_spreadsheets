@@ -1,6 +1,6 @@
 ---
 title: "Starting Out Tips"
-resources: data
+resources: data/
 subtitle: "Data4All"
 author: "Ted Laderas, PhD"
 format: 

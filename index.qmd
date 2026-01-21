@@ -1,6 +1,6 @@
 ---
 title: "Better ~~Excel~~ Spreadsheets"
-resources: data
+resources: data/
 subtitle: "Data4All"
 author: "Ted Laderas, PhD"
 format: 
@@ -37,7 +37,15 @@ Please be respectful of your fellow learners and help each other learn.
 
 Remember, it's dangerous to learn alone! So partner up with someone, it's fun to learn together.
 
-## Introduction
+## Introduction (you)
+
+Introduce yourself live or in chat:
+
+- Your name and group
+- How do you use spreadsheets?
+- Favorite spring activity
+
+## Introduction (concepts)
 
 > Spreadsheets, for all of their mundane rectangularness, have been the subject of angst and controversy for decades. - Kara Woo and Karl Broman
 
