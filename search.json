@@ -30,11 +30,21 @@
     ]
   },
   {
+    "objectID": "index.html#hit-record-in-teams",
+    "href": "index.html#hit-record-in-teams",
+    "title": "Better Spreadsheets",
+    "section": "0.4 Hit Record in Teams",
+    "text": "0.4 Hit Record in Teams",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better ~~Excel~~ Spreadsheets</span>"
+    ]
+  },
+  {
     "objectID": "index.html#introduction-concepts",
     "href": "index.html#introduction-concepts",
     "title": "Better Spreadsheets",
-    "section": "0.4 Introduction (concepts)",
-    "text": "0.4 Introduction (concepts)\n\nSpreadsheets, for all of their mundane rectangularness, have been the subject of angst and controversy for decades. - Kara Woo and Karl Broman\n\nThere are better ways of formatting spreadsheets that we can learn to make our spreadsheets more useful to others. We can do this in ways that still make spreadsheets useful to us.",
+    "section": "0.5 Introduction (concepts)",
+    "text": "0.5 Introduction (concepts)\n\nSpreadsheets, for all of their mundane rectangularness, have been the subject of angst and controversy for decades. - Kara Woo and Karl Broman\n\nThere are better ways of formatting spreadsheets that we can learn to make our spreadsheets more useful to others. We can do this in ways that still make spreadsheets useful to us.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better ~~Excel~~ Spreadsheets</span>"
     ]
@@ -43,8 +53,8 @@
     "objectID": "index.html#a-note-about-excel-and-spreadsheets",
     "href": "index.html#a-note-about-excel-and-spreadsheets",
     "title": "Better Spreadsheets",
-    "section": "0.5 A Note About Excel and Spreadsheets",
-    "text": "0.5 A Note About Excel and Spreadsheets\nExcel is super useful and super flexible. As a Data Scientist, I will never look down on Excel users.\nThese tips will make collaborating with data scientists easier, but the goal is to understand how your data gets transformed and loaded with various tools.\nIf you only implement some of these tips, that’s great. Do what’s easiest for you.\nOur goal is reproducible research - and you can do your part.",
+    "section": "0.6 A Note About Excel and Spreadsheets",
+    "text": "0.6 A Note About Excel and Spreadsheets\nExcel is super useful and super flexible. As a Data Scientist, I will never look down on Excel users.\nThese tips will make collaborating with data scientists easier, but the goal is to understand how your data gets transformed and loaded with various tools.\nIf you only implement some of these tips, that’s great. Do what’s easiest for you.\nOur goal is reproducible research - and you can do your part.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better ~~Excel~~ Spreadsheets</span>"
     ]
@@ -53,8 +63,8 @@
     "objectID": "index.html#this-is-workshop-is-not-about-excel-tips",
     "href": "index.html#this-is-workshop-is-not-about-excel-tips",
     "title": "Better Spreadsheets",
-    "section": "0.6 This is Workshop is Not About Excel Tips",
-    "text": "0.6 This is Workshop is Not About Excel Tips\nThis workshop is about formatting, not necessarily tips and tricks for Excel.\nIf you are interested in more Excel tips, here is the Hutch Learning Excel Playlist.",
+    "section": "0.7 This is Workshop is Not About Excel Tips",
+    "text": "0.7 This is Workshop is Not About Excel Tips\nThis workshop is about formatting, not necessarily tips and tricks for Excel.\nIf you are interested in more Excel tips, here is the Hutch Learning Excel Playlist.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better ~~Excel~~ Spreadsheets</span>"
     ]
@@ -63,8 +73,8 @@
     "objectID": "index.html#learning-objectives",
     "href": "index.html#learning-objectives",
     "title": "Better Spreadsheets",
-    "section": "0.7 Learning Objectives",
-    "text": "0.7 Learning Objectives\n\n\n\nR/Excel Disco by Allison Horst\n\n\n\nExplain and utilize tidy principles to effectively organize your data\nFormat your data to effecitvely utilize it in analyses\nCollaborate with data scientists more effectively with formatting tips\nExplain data cleaning tools in R that can help",
+    "section": "0.8 Learning Objectives",
+    "text": "0.8 Learning Objectives\n\n\n\nR/Excel Disco by Allison Horst\n\n\n\nExplain and utilize tidy principles to effectively organize your data\nFormat your data to effecitvely utilize it in analyses\nCollaborate with data scientists more effectively with formatting tips\nExplain data cleaning tools in R that can help",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better ~~Excel~~ Spreadsheets</span>"
     ]
@@ -73,8 +83,8 @@
     "objectID": "index.html#motivation",
     "href": "index.html#motivation",
     "title": "Better Spreadsheets",
-    "section": "0.8 Motivation",
-    "text": "0.8 Motivation\nSpreadsheet Horror Stories\n\nRetraction Watch: Genomics has a Spreadsheet Problem - Thankfully, this has been fixed in recent versions of Excel\nFormula error inflated myocarditis statistics\nOfficials Say They’ve Fixed a ‘Sorting’ Breakdown in Virginia Booze Raffle\n\n\nMurrell (2013) contrasted data that are formatted for humans to view by eye with data that are formatted for a computer. He provided an extended example of computer code to extract data from a set of files with complex arrangements. It is important that data analysts be able to work with such complex data files. But if the initial arrangement of the data files is planned with the computer in mind, the later analysis process is simplified.",
+    "section": "0.9 Motivation",
+    "text": "0.9 Motivation\nSpreadsheet Horror Stories\n\nRetraction Watch: Genomics has a Spreadsheet Problem - Thankfully, this has been fixed in recent versions of Excel\nFormula error inflated myocarditis statistics\nOfficials Say They’ve Fixed a ‘Sorting’ Breakdown in Virginia Booze Raffle\n\n\nMurrell (2013) contrasted data that are formatted for humans to view by eye with data that are formatted for a computer. He provided an extended example of computer code to extract data from a set of files with complex arrangements. It is important that data analysts be able to work with such complex data files. But if the initial arrangement of the data files is planned with the computer in mind, the later analysis process is simplified.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better ~~Excel~~ Spreadsheets</span>"
     ]
@@ -83,8 +93,8 @@
     "objectID": "index.html#data-integrity",
     "href": "index.html#data-integrity",
     "title": "Better Spreadsheets",
-    "section": "0.9 Data Integrity",
-    "text": "0.9 Data Integrity\n\nWhat We Know About Spreadsheet Errors\nDon’t go back and try to retrospectively implement these tips. Try and adopt a few of them starting now.\nDon’t be embarrassed or ashamed - just resolve to do better",
+    "section": "0.10 Data Integrity",
+    "text": "0.10 Data Integrity\n\nWhat We Know About Spreadsheet Errors\nDon’t go back and try to retrospectively implement these tips. Try and adopt a few of them starting now.\nDon’t be embarrassed or ashamed - just resolve to do better",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better ~~Excel~~ Spreadsheets</span>"
     ]
@@ -93,8 +103,8 @@
     "objectID": "index.html#overview-of-today",
     "href": "index.html#overview-of-today",
     "title": "Better Spreadsheets",
-    "section": "0.10 Overview of Today",
-    "text": "0.10 Overview of Today\nWe’ll be looking at the tips from Data Organization in Spreadsheets.\nI think if you work with spreadsheets in any way, you should take a look at it.\n\n\n\n0.10.1 Starting Out Tips\n\nNo empty cells\nChoose Good Names for Things\nWrite Dates as YYYY-MM-DD\nBe Consistent\nPut just one thing in a cell\n\n\n\n\n0.10.2 Intermediate Tips\n\nMake it a Rectangle\nCreate a Data Dictionary\nDo not use font color or highlighting as data\n\n\n\n\n0.10.3 Advanced Tips\n\nMake Backups\nNo Calculations in the Raw Data files\nUse Data Validation to Avoid Errors\nSave the Data in Plain Text Files\n\n\n\n\n\n0.10.4 Cleaning Data in Excel\n\nTop Tips for Cleaning Your Data in Excel\n\n\n\n0.10.5 Spreadsheet Examples\nAll of these examples are from the reading, with the exception of the fertility data.",
+    "section": "0.11 Overview of Today",
+    "text": "0.11 Overview of Today\nWe’ll be looking at the tips from Data Organization in Spreadsheets.\nI think if you work with spreadsheets in any way, you should take a look at it.\n\n\n\n0.11.1 Starting Out Tips\n\nNo empty cells\nChoose Good Names for Things\nWrite Dates as YYYY-MM-DD\nBe Consistent\nPut just one thing in a cell\n\n\n\n\n0.11.2 Intermediate Tips\n\nMake it a Rectangle\nCreate a Data Dictionary\nDo not use font color or highlighting as data\n\n\n\n\n0.11.3 Advanced Tips\n\nMake Backups\nNo Calculations in the Raw Data files\nUse Data Validation to Avoid Errors\nSave the Data in Plain Text Files\n\n\n\n\n\n0.11.4 Cleaning Data in Excel\n\nTop Tips for Cleaning Your Data in Excel\n\n\n\n0.11.5 Spreadsheet Examples\nAll of these examples are from the reading, with the exception of the fertility data.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better ~~Excel~~ Spreadsheets</span>"
     ]
